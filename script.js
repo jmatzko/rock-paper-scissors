@@ -1,9 +1,10 @@
-let userSelection = prompt("Enter Rock, Paper, or Scissors");
+
 
 for (let i = 0; i < 5; i++) {
 let userSelection = prompt("Enter Rock, Paper, or Scissors");
 console.log(playRound(playerChoice(userSelection), getComputerChoice()));
 }
+
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3) + 1;
     if (choice === 1) {
